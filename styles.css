@@ -156,14 +156,14 @@
 
 /* Estilo para las tarjetas */
 .card {
-    border-radius: 7px;
+    border-radius: 20px;
     margin-left: 30px;
     width: 80%;
     background: linear-gradient(to right, #1E1C5A 57%, #403BC0 100%); /* Aquí aplicamos el gradiente */
     color: aliceblue;
     margin-bottom: 30px;
     margin-top: 30px;
-    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.2);
   }
   
   /* Estilo para la imagen dentro de la tarjeta */
@@ -172,6 +172,9 @@
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
     margin-bottom: 10px;
+    border-top-left-radius: 20px; /* Redondea la esquina superior izquierda */
+    border-top-right-radius: 20px; /* Redondea la esquina superior derecha */
+    border: 1px solid black;
   }
   
   .card h1{
@@ -180,17 +183,20 @@
   }
 
   .card p{
-    margin: 25px;
+    margin: 20px;
     font-size: 0.8rem;
-    width: 420px;
+    width: 370px;
     text-align: justify;
     margin-top: -5px;
+    margin-left: 15px;
   }
 
   .card .button_action {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
+    border-bottom-left-radius: 20px; /* Redondea la esquina superior izquierda */
+    border-bottom-right-radius: 20px; /* Redondea la esquina superior derecha */
   }
 
 .card .button_action button {
