@@ -4,7 +4,7 @@
     justify-content: space-between; /* Separar izquierda y derecha */
     align-items: center; /* Centrar verticalmente los elementos */
     padding: 10px 20px; /* Espaciado interno */ 
-    margin: 10px;
+    background: linear-gradient(to bottom, rgba(36, 33, 33, 0.8), rgba(0, 0, 0, 0)); /* Gradiente oscuro */
 }
 
 /* Estilo general para los enlaces */
@@ -21,69 +21,93 @@
     color: white;
     font-size: 1.2rem;
     margin: 10px;
+    font-family: 'Martian Mono', monospace;
 }
-
-
 
 /* Estilo del fondo */
 .cuerpo {
-    background-image: url("./backgrounddata.png");
+    background-image: url('./backgrounddata.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: white;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: 'Martian Mono',monospace; /* Asegura que ocupe toda la pantalla */
+    font-family: 'Martian Mono', monospace;
 }
 
-.main-container{
+/* Contenedor principal */
+.main-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Alinear arriba para que el contenido inicie desde el tope */
     margin: 30px;
+    gap: 20px; /* Espaciado entre las columnas */
 }
 
+/* Contenedor izquierdo */
 .main-container .left {
-    flex: 6; /* Ocupa el 70% */
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo para diferenciar */
+    flex: 6; /* Ocupa el 60% */
     padding: 20px;
-    height: 500px;
-    display:flex;
+    height: auto; /* Ajuste dinámico según el contenido */
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-   
+    justify-content: start;
+    gap: 25px;
 }
 
+
+/* Contenedor derecho */
 .main-container .right {
-    flex: 4; /* Ocupa el 30% */
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo para diferenciar */
+    flex: 4; /* Ocupa el 40% */
     padding: 20px;
-    height: 500px;
+    height: auto; /* Ajuste dinámico según el contenido */
+    position: relative;
 }
 
-.boton{
-    margin-left: 30px;
+/* Botón */
+.boton {
+    align-self: flex-start; /* Alinear al inicio del contenedor izquierdo */
     font-size: 1.4rem;
     border-radius: 5px;
-    padding: 15px;
-    font-family: 'Martian Mono',monospace;
+    padding: 15px 30px; /* Añadir más espacio horizontal */
+    font-family: 'Martian Mono', monospace;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-    /* Anillo */
-    .ring {
-        width: 650px;
-        height: 650px;
-        border: 15px solid white;
-        border-radius: 50%;
-        background-color: transparent;
-        position: absolute; /* Para permitir el posicionamiento */
-        right: -200px; /* Mueve el anillo hacia la derecha para que solo un cuarto sea visible */
-        top: 50%; /* Centra verticalmente */
-        transform: translateY(-45%); /* Ajuste vertical */
-        box-sizing: border-box;
-      }
+/* Estilo de hover para el botón */
+.boton:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
 
-.main-container .left h2{
-font-weight: 200;
+/* Anillo */
+.ring {
+    width: 650px;
+    height: 650px;
+    border: 15px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    right: -200px; /* Mueve el anillo hacia la derecha para que solo un cuarto sea visible */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-45%); /* Ajuste vertical */
+    box-sizing: border-box;
+}
+
+/* Ajustes para encabezados secundarios */
+.main-container .left h2 {
+    font-weight: 200;
+    margin: 5px 0; /* Reducir el espacio entre los elementos */
+}
+
+/* Asegura que el botón esté alineado con el contenido */
+.main-container .left > .boton {
+    margin-top: auto;
 }
