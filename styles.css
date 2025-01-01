@@ -151,64 +151,52 @@
 /* Estilo para el contenedor del grid */
 .card_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-    grid-gap: 20px; /* Espacio entre las celdas */
-    margin-top: 20px;
-  }
+    grid-template-columns: repeat(3, 1fr);}
   
+
 /* Estilo para las tarjetas */
 .card {
-    background-color: #333; /* Color de fondo oscuro */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-    color: #fff; /* Texto blanco */
+    border-radius: 7px;
+    margin-left: 30px;
+    width: 80%;
+    background: linear-gradient(to right, #1E1C5A 57%, #403BC0 100%); /* Aquí aplicamos el gradiente */
+    color: aliceblue;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Imagen de la tarjeta */
-  .card_image img {
-    width: 70%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* Contenido de la tarjeta */
-  .card_content {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    
-  }
-  
-  .card_content h1 {
-    font-size: 1.2rem;
+  /* Estilo para la imagen dentro de la tarjeta */
+  .card img {
+    width: 100%; /* Ajusta la imagen al 100% del ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
     margin-bottom: 10px;
   }
   
-  .card_content p {
+  .card h1{
+    margin: 15px;
+    font-size: 1.2rem;
+  }
+
+  .card p{
+    margin: 25px;
     font-size: 0.8rem;
+    width: 420px;
+    text-align: justify;
+    margin-top: -5px;
   }
-  
-  /* Pie de la tarjeta */
-  .card_footer {
-    margin-top: auto;
+
+  .card .button_action {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
   }
-  
-  .card_footer button {
-    background-color: #007bff; /* Azul claro para el botón */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card_footer button:hover {
-    background-color: #0056b3;
-  }
-  
+
+.card .button_action button {
+        background-color: #1E1C5A; /* Color hexadecimal */
+        color: #fff; /* Color blanco */
+        margin: 20px;
+        padding: 10px 50px;
+        border-radius: 5px;
+      }
