@@ -13,7 +13,7 @@
     list-style: none;
     gap: 25px; /* Espaciado entre elementos */
     padding: 0;
-    margin: 0;
+    margin-left: 25px;
 }
 
 .navbar a {
@@ -33,8 +33,9 @@
     color: white;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-height: 100vh; /* Asegura que el fondo ocupe toda la pantalla */
     font-family: 'Martian Mono', monospace;
+    overflow: hidden; /* Evita desbordamientos */
 }
 
 /* Contenedor principal */
@@ -54,9 +55,8 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 25px;
+    gap: 30px;
 }
-
 
 /* Contenedor derecho */
 .main-container .right {
@@ -69,7 +69,7 @@
 /* Botón */
 .boton {
     align-self: flex-start; /* Alinear al inicio del contenedor izquierdo */
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-radius: 5px;
     padding: 15px 30px; /* Añadir más espacio horizontal */
     font-family: 'Martian Mono', monospace;
@@ -78,6 +78,7 @@
     border: 1px solid white;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 30px; /* Ajuste para colocarlo más abajo */
 }
 
 /* Estilo de hover para el botón */
@@ -97,17 +98,27 @@
     position: absolute;
     right: -200px; /* Mueve el anillo hacia la derecha para que solo un cuarto sea visible */
     top: 50%; /* Centra verticalmente */
-    transform: translateY(-45%); /* Ajuste vertical */
+    transform: translateX(30%); 
+    transform: translateY(-5%); * Ajuste vertical */
     box-sizing: border-box;
+    overflow: hidden; /* Evita el desbordamiento */
 }
 
 /* Ajustes para encabezados secundarios */
 .main-container .left h2 {
     font-weight: 200;
     margin: 5px 0; /* Reducir el espacio entre los elementos */
+    font-size: 20px;
+}
+
+.main-container .left p {
+    margin: 5px 0; /* Reducir el espacio entre los elementos */
+    font-size: 18px;
 }
 
 /* Asegura que el botón esté alineado con el contenido */
 .main-container .left > .boton {
     margin-top: auto;
 }
+
+
