@@ -206,3 +206,33 @@
         padding: 10px 50px;
         border-radius: 5px;
       }
+
+      .icons-backend {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+        justify-content: center; /* Centra los elementos horizontalmente */
+      }
+      
+      .backend h1 {
+        color: #403BC0;
+        text-align: center; /* Centra el texto horizontalmente */
+        margin-bottom: 10px;
+        font-size: 1.1rem; /* Añade un margen inferior para separar el título de los iconos */
+      }
+
+      .icon-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px; /* Añade espacio entre cada elemento */
+      }
+      
+      .icon-text img {
+        width: 50px; /* Ajusta el ancho del icono */
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      
+      .icon-text h3 {
+        font-size: 13px;
+      }
