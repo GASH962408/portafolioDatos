@@ -1,9 +1,17 @@
 /* Estilo para la barra de navegación */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+    font-family: 'Martian Mono', monospace;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between; /* Separar izquierda y derecha */
     align-items: center; /* Centrar verticalmente los elementos */
-    padding: 10px 20px; /* Espaciado interno */ 
+    padding: 20px 20px; /* Espaciado interno */ 
     background: linear-gradient(to bottom, rgba(36, 33, 33, 0.8), rgba(0, 0, 0, 0)); /* Gradiente oscuro */
 }
 
@@ -25,7 +33,7 @@
 }
 
 /* Estilo del fondo */
-.cuerpo {
+.landing-page {
     background-image: url('./backgrounddata.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +43,7 @@
     padding: 0;
     min-height: 100vh; /* Asegura que el fondo ocupe toda la pantalla */
     font-family: 'Martian Mono', monospace;
-    overflow: hidden; /* Evita desbordamientos */
+    overflow:auto;
 }
 
 /* Contenedor principal */
@@ -121,4 +129,86 @@
     margin-top: auto;
 }
 
+.header_project{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
 
+.header_project .header_project_left h1{
+    border-bottom: 5px solid black;
+    padding-bottom: 7px;
+}
+
+.header_project .header_project_right button{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Estilo para el contenedor del grid */
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las celdas */
+    margin-top: 20px;
+  }
+  
+/* Estilo para las tarjetas */
+.card {
+    background-color: #333; /* Color de fondo oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    color: #fff; /* Texto blanco */
+  }
+  
+  /* Imagen de la tarjeta */
+  .card_image img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Contenido de la tarjeta */
+  .card_content {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .card_content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card_content p {
+    font-size: 0.8rem;
+  }
+  
+  /* Pie de la tarjeta */
+  .card_footer {
+    margin-top: auto;
+  }
+  
+  .card_footer button {
+    background-color: #007bff; /* Azul claro para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card_footer button:hover {
+    background-color: #0056b3;
+  }
+  
