@@ -298,8 +298,10 @@ margin-bottom: 10px;
     }
 
 .column-a p{
-font-size: 20px;
+font-size: 24px;
 width: 100%;
+margin-left: 10px;
+font-weight: 600;
 }
 
 .experiencia{
@@ -307,7 +309,90 @@ width: 100%;
 
 }
 
-
+.Education {
+    background-color: #1a1a2e; /* Fondo similar al de la imagen */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    background-image: url("./fondo3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .Education h2 {
+    text-align: left;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  
+  .year {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-start;
+    background-color: #22254b;
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .content:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .details h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .details p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d1d1;
+  }
+  
 
 
 
