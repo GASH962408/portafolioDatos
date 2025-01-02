@@ -200,6 +200,10 @@
   }
 
 .card .button_action button {
+        all: unset; /* Elimina todos los estilos predeterminados */
+        display: inline-block; /* Asegura que el botón sea un elemento de bloque en línea */
+        text-align: center; /* Centra el texto */
+        cursor: pointer; /* Muestra el cursor de mano */
         background-color: #1E1C5A; /* Color hexadecimal */
         color: #fff; /* Color blanco */
         margin: 20px;
