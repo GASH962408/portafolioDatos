@@ -1,4 +1,5 @@
-/* Estilo para la barra de navegación */
+/* Seccion Navbar  */
+/* =========================  */
 * {
     margin: 0;
     padding: 0;
@@ -96,22 +97,6 @@
     transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
-/* Anillo */
-.ring {
-    width: 650px;
-    height: 650px;
-    border: 15px solid white;
-    border-radius: 50%;
-    background-color: transparent;
-    position: absolute;
-    right: -200px; /* Mueve el anillo hacia la derecha para que solo un cuarto sea visible */
-    top: 50%; /* Centra verticalmente */
-    transform: translateX(30%); 
-    transform: translateY(-5%); * Ajuste vertical */
-    box-sizing: border-box;
-    overflow: hidden; /* Evita el desbordamiento */
-}
-
 /* Ajustes para encabezados secundarios */
 .main-container .left h2 {
     font-weight: 200;
@@ -147,6 +132,62 @@
     background-color: white;
     border-radius: 5px;
 }
+
+/* Animación para el Navbar */
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: slideDown 1s ease-in-out;
+}
+
+/* Animación para la sección Landing Page */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.landing-page {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animación para el botón en Landing Page */
+@keyframes scaleUp {
+  from {
+      transform: scale(0.9);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+.boton {
+  animation: scaleUp 0.8s ease-in-out;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Seccion Proyectos */
+/* =============================================== */
 
 /* Estilo para el contenedor del grid */
 .card_grid {
@@ -211,6 +252,48 @@
         border-radius: 5px;
       }
 
+
+/* Animación para las tarjetas de Proyectos */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Animación escalada al hover */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Delay para animación en cascada */
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+/* Seccion Banners */
+/* ==========================*/
+
       .banners{
         display: flex;
         justify-content: space-between;
@@ -266,6 +349,11 @@
         margin-left: 20px;
       }
 
+ /* Seccion Experiencia */
+  /* ============================= */
+
+
+
       .experiencia h1{
         margin-left: 30px;
         margin-bottom: 20px;
@@ -313,7 +401,44 @@ font-weight: 600;
 
 }
 
+
+/* Animación para los elementos de la línea de tiempo */
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+/* Delay para animación en cascada */
+.timeline-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.timeline-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+
+
+
+
 /* Sección de Educación */
+/* ======================== */
 .Education {
     background-color: #1a1a2e;
     color: white;
@@ -410,6 +535,42 @@ font-weight: 600;
   }
   
   
+/* Animación para íconos en Educación */
+@keyframes bounceIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.icon img {
+  animation: bounceIn 0.8s ease-in-out forwards;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Animación de Fade para textos */
+.timeline-item .content {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Delay en los textos */
+.timeline-item:nth-child(1) .content {
+  animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(2) .content {
+  animation-delay: 0.4s;
+}
 
 
 
