@@ -333,52 +333,85 @@ font-weight: 600;
   
   .timeline-item {
     display: flex;
+    align-items: center; /* Alinea verticalmente los elementos (íconos y texto) */
     margin-bottom: 40px;
+}
+
+.icon {
+    width: 60px; /* Ajusta el tamaño del contenedor del ícono */
+    height: 60px; /* Asegura que todos los íconos tengan el mismo tamaño */
+    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
+    margin-right: 20px; /* Espaciado entre el ícono y el texto */
+    display: flex; /* Centra la imagen dentro del contenedor del ícono */
+    justify-content: center;
     align-items: center;
-  }
-  
-  .year {
+}
+
+.icon img {
+    max-width: 100%; /* Asegura que la imagen no supere el tamaño del contenedor */
+    max-height: 100%; /* Evita que la imagen exceda el contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Organiza el texto en columna */
+    align-items: flex-start; /* Alinea el texto al inicio (izquierda) */
+    background-color: #22254b; /* Fondo del bloque de texto */
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1; /* Asegura que el contenido ocupe el espacio restante */
+    margin-left: 10px;
+}
+
+.year {
     font-size: 24px;
     font-weight: bold;
     color: white;
     flex-shrink: 0;
-    width: 60px;
+    width: 60px; /* Mantén el mismo ancho para todas las fechas */
     text-align: center;
-  }
+}
+
   
-  .content {
+.content {
     display: flex;
-    align-items: flex-start;
-    background-color: #22254b;
+    flex-direction: column; /* Organiza el texto en columna */
+    align-items: flex-start; /* Alinea el texto al inicio (izquierda) */
+    background-color: #22254b; /* Fondo del bloque de texto */
     padding: 20px;
     border-radius: 8px;
-    flex-grow: 1;
-    margin-left: 20px;
-    position: relative;
-  }
+    flex-grow: 1; /* Asegura que el contenido ocupe el espacio restante */
+    margin-left: 10px;
+}
+
+.year {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+    width: 60px; /* Mantén el mismo ancho para todas las fechas */
+    text-align: center;
+}
   
-  .content:before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 25px;
-    width: 20px;
-    height: 2px;
-    background-color: white;
-  }
+
   
   .icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 20px;
-  }
+    width: 60px; /* Ajusta el tamaño del contenedor del ícono */
+    height: 60px; /* Asegura que todos los íconos tengan el mismo tamaño */
+    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
+    margin-right: 20px; /* Espaciado entre el ícono y el texto */
+    display: flex; /* Centra la imagen dentro del contenedor del ícono */
+    justify-content: center;
+    align-items: center;
+}
   
-  .icon img {
-    width: 100%;
-    height: auto;
-  }
+.icon img {
+    max-width: 100%; /* Asegura que la imagen no supere el tamaño del contenedor */
+    max-height: 100%; /* Evita que la imagen exceda el contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
   
   .details h3 {
     margin: 0 0 10px;
