@@ -211,7 +211,12 @@
         display: flex;
         justify-content: space-between;
         background-color: rgb(180, 180, 185);
+        padding: 20px;
       }
+
+
+
+
       .icons-backend {
         display: flex;
         flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
@@ -241,3 +246,77 @@
       .icon-text h3 {
         font-size: 13px;
       }
+
+      .years h1 {
+        color: #403BC0;
+        text-align: center; /* Centra el texto horizontalmente */
+        margin-bottom: 10px;
+        font-size: 1.1rem; /* Añade un margen inferior para separar el título de los iconos */
+      }
+      .years p{
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+      .years{
+        margin-left: 20px;
+      }
+
+      .experiencia h1{
+        margin-left: 30px;
+        margin-bottom: 20px;
+        border-bottom: 5px solid black;
+        padding-bottom: 5px;
+        padding-top: 30px;
+        width: 13.5%;
+      }
+
+      .fila-exp{
+        display: flex; /* Establecemos el contenedor como un contenedor flex */
+      }
+  
+      .column-a {
+        width: 20%; /* La primera columna ocupa el 20% del ancho */
+        padding: 30px;
+      }
+  
+      .column-b {
+        width: 80%; /* La segunda columna ocupa el 80% del ancho */
+        padding: 15px;
+      }
+
+
+.column-b h2{
+font-size: 19px;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.column-b p{
+    font-size:12px;
+    width: 100%;
+    }
+
+.column-a p{
+font-size: 20px;
+width: 100%;
+}
+
+.experiencia{
+    background-image: url("./fondo2.png");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
