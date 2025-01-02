@@ -207,6 +207,11 @@
         border-radius: 5px;
       }
 
+      .banners{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(180, 180, 185);
+      }
       .icons-backend {
         display: flex;
         flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
