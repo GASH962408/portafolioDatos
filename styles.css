@@ -35,7 +35,7 @@
 
 /* Estilo del fondo */
 .landing-page {
-    background-image: url('./backgrounddata.png');
+    background-image: url('./images/backgrounddata.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -397,7 +397,7 @@ font-weight: 600;
 }
 
 .experiencia{
-    background-image: url("./fondo2.png");
+    background-image: url("./images/fondo2.png");
 
 }
 
