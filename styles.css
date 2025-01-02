@@ -309,124 +309,102 @@ font-weight: 600;
 
 }
 
+/* Sección de Educación */
 .Education {
-    background-color: #1a1a2e; /* Fondo similar al de la imagen */
+    background-color: #1a1a2e;
     color: white;
-    font-family: 'Arial', sans-serif;
     padding: 40px;
-    background-image: url("./fondo3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Martian Mono', monospace;
   }
   
   .Education h2 {
+    font-size: 2rem;
     text-align: left;
+    margin-bottom: 20px;
     border-bottom: 2px solid white;
     display: inline-block;
-    margin-bottom: 30px;
   }
   
   .timeline {
-    position: relative;
-    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaciado entre cada elemento de la línea de tiempo */
   }
   
   .timeline-item {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos (íconos y texto) */
-    margin-bottom: 40px;
-}
-
-.icon {
-    width: 60px; /* Ajusta el tamaño del contenedor del ícono */
-    height: 60px; /* Asegura que todos los íconos tengan el mismo tamaño */
-    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
-    margin-right: 20px; /* Espaciado entre el ícono y el texto */
-    display: flex; /* Centra la imagen dentro del contenedor del ícono */
-    justify-content: center;
-    align-items: center;
-}
-
-.icon img {
-    max-width: 100%; /* Asegura que la imagen no supere el tamaño del contenedor */
-    max-height: 100%; /* Evita que la imagen exceda el contenedor */
-    object-fit: contain; /* Mantiene la proporción de la imagen */
-}
-
-.content {
-    display: flex;
-    flex-direction: column; /* Organiza el texto en columna */
-    align-items: flex-start; /* Alinea el texto al inicio (izquierda) */
-    background-color: #22254b; /* Fondo del bloque de texto */
-    padding: 20px;
-    border-radius: 8px;
-    flex-grow: 1; /* Asegura que el contenido ocupe el espacio restante */
-    margin-left: 10px;
-}
-
-.year {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    flex-shrink: 0;
-    width: 60px; /* Mantén el mismo ancho para todas las fechas */
-    text-align: center;
-}
-
+    align-items: flex-start;
+    gap: 20px;
+  }
   
-.content {
-    display: flex;
-    flex-direction: column; /* Organiza el texto en columna */
-    align-items: flex-start; /* Alinea el texto al inicio (izquierda) */
-    background-color: #22254b; /* Fondo del bloque de texto */
-    padding: 20px;
-    border-radius: 8px;
-    flex-grow: 1; /* Asegura que el contenido ocupe el espacio restante */
-    margin-left: 10px;
-}
-
-.year {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+  .year {
     flex-shrink: 0;
-    width: 60px; /* Mantén el mismo ancho para todas las fechas */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
     text-align: center;
-}
+    width: 80px; /* Tamaño fijo para alinear todas las fechas */
+  }
   
-
+  .content {
+    display: flex;
+    gap: 20px;
+    background-color: #22254b;
+    border-radius: 10px;
+    padding: 20px;
+    flex-grow: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
   
   .icon {
-    width: 60px; /* Ajusta el tamaño del contenedor del ícono */
-    height: 60px; /* Asegura que todos los íconos tengan el mismo tamaño */
-    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
-    margin-right: 20px; /* Espaciado entre el ícono y el texto */
-    display: flex; /* Centra la imagen dentro del contenedor del ícono */
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
   
-.icon img {
-    max-width: 100%; /* Asegura que la imagen no supere el tamaño del contenedor */
-    max-height: 100%; /* Evita que la imagen exceda el contenedor */
-    object-fit: contain; /* Mantiene la proporción de la imagen */
-}
-
+  .icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   
   .details h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    color: white;
+    font-size: 1.2rem;
+    margin: 0;
   }
   
   .details p {
+    font-size: 0.9rem;
     margin: 0;
-    font-size: 14px;
-    line-height: 1.6;
     color: #d1d1d1;
+    line-height: 1.6;
   }
   
-
+  .highlight {
+    font-weight: bold;
+    color: #FFD700; /* Amarillo dorado */
+  }
+  
+  .tech-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  
 
 
 
