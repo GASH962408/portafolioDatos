@@ -26,11 +26,12 @@
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   margin: 10px;
   padding-bottom: 5px; /* Espacio adicional debajo del texto */
   transition: color 0.3s ease; /* Suaviza color y línea */
+  font-weight: 600;
 }
 
 /* Landing Page */
@@ -70,13 +71,17 @@
 
 .main-container h2 {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .main-container p {
-  font-size: 18px;
+  font-size: 23px;
 }
 
+.main-container h1 {
+  font-weight: 200;
+  font-size: 38px;
+}
 
 .boton {
   align-self: flex-start;
@@ -131,7 +136,7 @@
 }
 
 .navbar a:hover {
-  color: #9c9c99;
+  color: #ffffff;
   border-bottom: 5px solid white; /* Línea blanca visible al hacer hover */
 }
 
@@ -147,9 +152,9 @@
 /* Contenedor del texto animado */
 #animated-text-container {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: 600;
-  color: rgb(19, 76, 182);
+  color: rgb(5, 30, 78);
   white-space: nowrap; /* Mantiene todo el texto en una línea */
   overflow: hidden; /* Oculta el texto que no se ha escrito */
 }
